@@ -52,19 +52,19 @@ export function FaqSection() {
     ];
 
     return (
-        <section className="w-full px-8 py-16 bg-white">
+        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-white">
             <div className="max-w-2xl mx-auto">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 sm:mb-10 lg:mb-12 text-center">
                     Frequently asked questions
                 </h2>
 
                 <Accordion type="single" collapsible className="w-full">
                     {faqs.map((faq, index) => (
                         <AccordionItem key={index} value={`item-${index}`}>
-                            <AccordionTrigger className="text-left text-lg font-medium">
+                            <AccordionTrigger className="text-left text-base sm:text-lg font-medium">
                                 {faq.question}
                             </AccordionTrigger>
-                            <AccordionContent className="text-muted-foreground text-base">
+                            <AccordionContent className="text-muted-foreground text-sm sm:text-base">
                                 {faq.answer}
                             </AccordionContent>
                         </AccordionItem>

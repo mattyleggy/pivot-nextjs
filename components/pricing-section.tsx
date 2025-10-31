@@ -101,30 +101,30 @@ export function PricingSection() {
     ];
 
     return (
-        <section className="w-full px-8 py-24 bg-white">
+        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-16">
-                    <div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-8 sm:mb-12 lg:mb-16">
+                    <div className="mb-6 md:mb-0">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 sm:mb-3">
                             Pivot Pricing
                         </h2>
-                        <p className="text-lg text-muted-foreground">Find the plan that works for you</p>
+                        <p className="text-base sm:text-lg text-muted-foreground">Find the plan that works for you</p>
                     </div>
 
                     {/* Toggle Switches */}
-                    <div className="flex flex-col gap-4 mt-8 md:mt-0">
+                    <div className="flex flex-row sm:flex-col gap-3 sm:gap-4">
                         <ToggleGroup
                             type="single"
                             value={billingPeriod}
                             onValueChange={(value) => value && setBillingPeriod(value)}
                             variant="outline"
-                            className="w-fit"
+                            className="w-full sm:w-fit"
                         >
-                            <ToggleGroupItem value="monthly" aria-label="Monthly">
+                            <ToggleGroupItem value="monthly" aria-label="Monthly" className="flex-1 sm:flex-none">
                                 Monthly
                             </ToggleGroupItem>
-                            <ToggleGroupItem value="annually" aria-label="Annually">
+                            <ToggleGroupItem value="annually" aria-label="Annually" className="flex-1 sm:flex-none">
                                 Annually
                             </ToggleGroupItem>
                         </ToggleGroup>
@@ -134,12 +134,12 @@ export function PricingSection() {
                             value={hostingType}
                             onValueChange={(value) => value && setHostingType(value)}
                             variant="outline"
-                            className="w-fit"
+                            className="w-full sm:w-fit"
                         >
-                            <ToggleGroupItem value="cloud" aria-label="Cloud">
+                            <ToggleGroupItem value="cloud" aria-label="Cloud" className="flex-1 sm:flex-none">
                                 Cloud
                             </ToggleGroupItem>
-                            <ToggleGroupItem value="self-host" aria-label="Self Host">
+                            <ToggleGroupItem value="self-host" aria-label="Self Host" className="flex-1 sm:flex-none">
                                 Self Host
                             </ToggleGroupItem>
                         </ToggleGroup>
@@ -147,11 +147,11 @@ export function PricingSection() {
                 </div>
 
                 {/* Pricing Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-border overflow-hidden">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-border overflow-hidden rounded-lg">
                     {pricingTiers.map((tier, index) => (
                         <div
                             key={index}
-                            className="flex flex-col bg-white border-r border-border last:border-r-0"
+                            className="flex flex-col bg-white border-r-0 sm:border-r border-border last:border-r-0 sm:last:border-r lg:last:border-r-0"
                         >
                             {/* Header */}
                             <div className={`${tier.headerColor} px-6 py-4`}>
@@ -159,7 +159,7 @@ export function PricingSection() {
                             </div>
 
                             {/* Content */}
-                            <div className="flex-1 flex flex-col px-6 py-6 min-h-[600px]">
+                            <div className="flex-1 flex flex-col px-4 sm:px-6 py-4 sm:py-6 min-h-[550px] sm:min-h-[600px]">
                                 {/* Pricing */}
                                 <div className="mb-4 min-h-[100px]">
                                     {tier.savings && (

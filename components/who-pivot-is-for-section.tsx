@@ -18,29 +18,29 @@ export function WhoPivotIsForSection() {
     ];
 
     return (
-        <section className="w-full px-8 py-16 bg-white">
+        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Main Heading */}
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 text-center">
                     Who Pivot is for?
                 </h2>
 
                 {/* Subtitle */}
-                <p className="text-lg md:text-xl text-foreground/80 mb-12 text-center max-w-3xl mx-auto">
+                <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-10 lg:mb-12 text-center max-w-3xl mx-auto">
                     Built for teams of every size — from first test to full-scale experimentation.
                 </p>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {audiences.map((audience, index) => (
                         <div
                             key={index}
-                            className="bg-muted p-8 rounded-lg"
+                            className="bg-muted p-6 sm:p-8 rounded-lg"
                         >
-                            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3 sm:mb-4">
                                 {audience.title}
                             </h3>
-                            <p className="text-muted-foreground leading-relaxed">
+                            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                                 {audience.description}
                             </p>
                         </div>

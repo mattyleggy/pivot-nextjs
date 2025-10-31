@@ -22,14 +22,14 @@ export function FeaturesSection() {
     ];
 
     return (
-        <section className="w-full px-8 py-16  max-w-7xl mx-auto">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 bg-muted">
+        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 bg-muted rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8">
                 {features.map((feature, index) => (
-                    <div key={index} className="flex-1 p-8">
-                        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                    <div key={index} className="flex-1">
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-3 sm:mb-4">
                             {feature.title}
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                             {feature.description}
                         </p>
                     </div>
