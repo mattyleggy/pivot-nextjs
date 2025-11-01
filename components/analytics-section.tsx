@@ -21,7 +21,7 @@ export function AnalyticsSection() {
                         "Skip the spreadsheets. Pivot’s AI translates complex data into natural language summaries, highlighting what’s working and what’s holding you back.",
                 },
             ]}
-            backgroundImageSrc="/images/hero/hero-home.png"
+            backgroundImageSrc="/images/usp-2.png"
             overlayImageSrc="/images/pivot-browser-2.png"
         />
     );

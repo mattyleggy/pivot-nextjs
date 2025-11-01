@@ -20,7 +20,7 @@ export function AiReportingSection() {
                         "Link session data directly to experiments. Spot issues, create new hypotheses, and launch tests instantly — all in one platform.",
                 },
             ]}
-            backgroundImageSrc="/images/hero/hero-home.png"
+            backgroundImageSrc="/images/usp-3.png"
             overlayImageSrc="/images/pivot-browser-2.png"
         />
     );

@@ -20,7 +20,7 @@ export function ExperimentSection() {
                         "When a variant wins, Pivot can roll it out automatically — so your team focuses on strategy, not manual rollouts and reports.",
                 },
             ]}
-            backgroundImageSrc="/images/hero/hero-home.png"
+            backgroundImageSrc="/images/usp-1.png"
             overlayImageSrc="/images/pivot-browser-2.png"
         />
     );
