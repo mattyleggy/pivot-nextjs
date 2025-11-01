@@ -137,20 +137,23 @@ function createWaitlistEmailTemplate(data: WaitlistEmailData) {
 
 export async function sendDemoEmail(data: DemoEmailData) {
   try {
-    const { error } = await resend.emails.send({
-      from: "jay@pivotapp.com.au",
+    const result = await resend.emails.send({
+      from: "Jay C <jay@pivotapp.com.au>",
       to: data.email,
-      bcc: "matty.j.lord@gmail.com",
+      bcc: ["matty.j.lord@gmail.com"],
       subject: "Thank you for booking a Pivot demo!",
       html: createDemoEmailTemplate(data),
     });
 
-    if (error) {
-      return { success: false, error: error.message };
+    if (result.error) {
+      console.error("Resend error:", result.error);
+      return { success: false, error: result.error.message };
     }
 
-    return { success: true };
+    console.log("Email sent successfully:", result.data?.id);
+    return { success: true, id: result.data?.id };
   } catch (error) {
+    console.error("Email send exception:", error);
     return {
       success: false,
       error: error instanceof Error ? error.message : "Failed to send email",
@@ -160,20 +163,23 @@ export async function sendDemoEmail(data: DemoEmailData) {
 
 export async function sendWaitlistEmail(data: WaitlistEmailData) {
   try {
-    const { error } = await resend.emails.send({
-      from: "jay@pivotapp.com.au",
+    const result = await resend.emails.send({
+      from: "Jay C <jay@pivotapp.com.au>",
       to: data.email,
-      bcc: "matty.j.lord@gmail.com",
+      bcc: ["matty.j.lord@gmail.com"],
       subject: "Welcome to the Pivot waitlist!",
       html: createWaitlistEmailTemplate(data),
     });
 
-    if (error) {
-      return { success: false, error: error.message };
+    if (result.error) {
+      console.error("Resend error:", result.error);
+      return { success: false, error: result.error.message };
     }
 
-    return { success: true };
+    console.log("Email sent successfully:", result.data?.id);
+    return { success: true, id: result.data?.id };
   } catch (error) {
+    console.error("Email send exception:", error);
     return {
       success: false,
       error: error instanceof Error ? error.message : "Failed to send email",

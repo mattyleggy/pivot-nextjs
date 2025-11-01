@@ -22,7 +22,7 @@ export function FeaturesSection() {
     ];
 
     return (
-        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 mx-auto">
+        <section id="platform" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 mx-auto">
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
                     <div key={index} className="flex flex-col bg-muted rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8">

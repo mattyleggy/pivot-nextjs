@@ -10,6 +10,7 @@ import { AiReportingSection } from "@/components/ai-reporting-section";
 import { PricingSection } from "@/components/pricing-section";
 import { WhoPivotIsForSection } from "@/components/who-pivot-is-for-section";
 import { FaqSection } from "@/components/faq-section";
+import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
             <PricingSection />
             <WhoPivotIsForSection />
             <FaqSection />
+            <ContactSection />
             <Footer />
         </div>
     );

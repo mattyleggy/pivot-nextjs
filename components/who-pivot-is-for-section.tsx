@@ -18,7 +18,7 @@ export function WhoPivotIsForSection() {
     ];
 
     return (
-        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-white">
+        <section id="audience" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Main Heading */}
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 text-center">
