@@ -44,10 +44,10 @@ export function Navbar() {
             {/* Desktop User Actions */}
             <div className="hidden md:flex items-center gap-6">
                 <Link
-                    href="/login"
+                    href="/demo"
                     className="text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors"
                 >
-                    Log in
+                    Book A Demo
                 </Link>
                 <Button
                     asChild
@@ -92,11 +92,11 @@ export function Navbar() {
                         </div>
                         <div className="border-t pt-6 flex flex-col gap-4">
                             <Link
-                                href="/login"
+                                href="/demo"
                                 className="px-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 rounded-md transition-colors text-center"
                                 onClick={() => setOpen(false)}
                             >
-                                Log in
+                                Book A Demo
                             </Link>
                             <Button
                                 asChild
