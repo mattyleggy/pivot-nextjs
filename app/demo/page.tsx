@@ -51,10 +51,10 @@ export default function DemoPage() {
     };
 
     return (
-        <div className="flex min-h-screen flex-col bg-white font-sans w-full">
+        <div className="flex min-h-screen flex-col bg-white font-sans max-w-[1920px] mx-auto w-full">
             <div className="flex flex-col lg:flex-row w-full min-h-screen">
                 {/* Left Column - Form Section */}
-                <div className="w-full lg:w-[40%] bg-gray-50 px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 flex flex-col">
+                <div className="w-full lg:w-[40%] bg-white px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 flex flex-col">
                     {/* Logo/Brand */}
                     <Link href="/" className="mb-8 lg:mb-12">
                         <h1 className="text-2xl font-bold text-gray-900" style={{ fontFamily: "serif" }}>
@@ -184,7 +184,7 @@ export default function DemoPage() {
                 {/* Right Column - Hero Image with Overlays */}
                 <div className="w-full lg:w-[60%] relative min-h-[500px] lg:min-h-screen">
                     {/* Background Image */}
-                    <div className="absolute inset-0">
+                    <div className="absolute inset-0 2xl:inset-8 2xl:rounded-xl 2xl:overflow-hidden">
                         <Image
                             src="/images/hero/hero-demo.png"
                             alt="Pivot landscape"
@@ -195,7 +195,7 @@ export default function DemoPage() {
                     </div>
 
                     {/* Overlay Testimonial Boxes */}
-                    <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+                    <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-8 lg:py-16 2xl:px-8 2xl:py-8">
                         {/* Top Box - DoorDash */}
                         <div className="bg-gray-900/90 backdrop-blur-sm rounded-lg p-6 mb-4 max-w-sm w-full shadow-xl">
                             <p className="text-white text-lg font-semibold mb-4">
