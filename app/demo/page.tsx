@@ -184,7 +184,7 @@ export default function DemoPage() {
                 {/* Right Column - Hero Image with Overlays */}
                 <div className="w-full lg:w-[60%] relative min-h-[500px] lg:min-h-screen">
                     {/* Background Image */}
-                    <div className="absolute inset-0 2xl:inset-8 2xl:rounded-xl 2xl:overflow-hidden">
+                    <div className="absolute inset-0 2xl:inset-4 2xl:rounded-xl 2xl:overflow-hidden">
                         <Image
                             src="/images/hero/hero-demo.png"
                             alt="Pivot landscape"
@@ -195,7 +195,7 @@ export default function DemoPage() {
                     </div>
 
                     {/* Overlay Testimonial Boxes */}
-                    <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-8 lg:py-16 2xl:px-8 2xl:py-8">
+                    <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-8 lg:py-16 2xl:px-4 2xl:py-4">
                         {/* Top Box - DoorDash */}
                         <div className="bg-gray-900/90 backdrop-blur-sm rounded-lg p-6 mb-4 max-w-sm w-full shadow-xl">
                             <p className="text-white text-lg font-semibold mb-4">
