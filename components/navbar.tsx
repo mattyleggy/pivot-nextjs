@@ -67,7 +67,7 @@ export function Navbar() {
                     asChild
                     className="bg-gray-800 text-white hover:bg-gray-700 rounded-lg px-4"
                 >
-                    <Link href="/waitlist">Join waitlist</Link>
+                    <Link href="/early-access">Get Early Access</Link>
                 </Button>
             </div>
 
@@ -122,7 +122,7 @@ export function Navbar() {
                                 asChild
                                 className="bg-gray-800 text-white hover:bg-gray-700 rounded-lg w-full"
                             >
-                                <Link href="/waitlist" onClick={() => setOpen(false)}>Join waitlist</Link>
+                                <Link href="/early-access" onClick={() => setOpen(false)}>Get Early Access</Link>
                             </Button>
                         </div>
                     </div>

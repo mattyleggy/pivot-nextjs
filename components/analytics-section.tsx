@@ -7,24 +7,22 @@ export function AnalyticsSection() {
             eyebrow="Know what converts and why"
             title="Product Analytics"
             description={
-                "Track every experiment, conversion path, and engagement metric from a single dashboard. Pivot’s AI-powered analytics reveal the why behind the data — giving you clear, actionable insights to boost performance and customer experience."
+                "Track every experiment, conversion path, and engagement metric from a single dashboard. Pivot's AI-powered analytics reveal the why behind the data — giving you clear, actionable insights to boost performance and customer experience."
             }
             features={[
                 {
-                    title: "Conversion-Focused Analytics",
+                    title: "Unified Dashboard",
                     description:
-                        "Measure KPIs that actually matter — revenue lift, engagement time, and activation rates — with visual dashboards that tell the full story.",
+                        "Track every experiment, conversion path, and engagement metric from a single dashboard — no more switching between tools or missing critical connections.",
                 },
                 {
-                    title: "AI Insight Summaries",
+                    title: "AI-Powered Insights",
                     description:
-                        "Skip the spreadsheets. Pivot’s AI translates complex data into natural language summaries, highlighting what’s working and what’s holding you back.",
+                        "Pivot's AI reveals the why behind the data, giving you clear, actionable insights to boost performance and customer experience.",
                 },
             ]}
-            backgroundImageSrc="/images/usp-2.png"
+            backgroundImageSrc="/images/usp-2a.png"
             overlayImageSrc="/images/pivot-browser-2.png"
         />
     );
 }
-
-

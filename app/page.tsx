@@ -18,8 +18,7 @@ export default function Home() {
         <div className="flex min-h-screen flex-col bg-white font-sans max-w-[1920px] mx-auto w-full">
             <Navbar />
             <HeroSection />
-            <CtaSection />
-            <ProblemSolutionSection />
+            <CtaSection />            
             <FeaturesSection />            
             <ExperimentSection />            
             <AnalyticsSection />

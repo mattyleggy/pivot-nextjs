@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type FeatureItem = {
     title: string;
@@ -13,6 +15,7 @@ type SideBySideSectionProps = {
     backgroundImageSrc: string;
     overlayImageSrc: string;
     reverse?: boolean;
+    showCtas?: boolean;
 };
 
 export function SideBySideSection(props: SideBySideSectionProps) {
@@ -24,6 +27,7 @@ export function SideBySideSection(props: SideBySideSectionProps) {
         backgroundImageSrc,
         overlayImageSrc,
         reverse = false,
+        showCtas = false,
     } = props;
 
     return (
@@ -38,6 +42,18 @@ export function SideBySideSection(props: SideBySideSectionProps) {
                     <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">{eyebrow}</p>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 sm:mb-6">{title}</h2>
                     <p className="text-sm sm:text-base md:text-lg text-foreground/80 leading-relaxed mb-6 sm:mb-8 lg:mb-10">{description}</p>
+
+                    {/* CTA Buttons */}
+                    {showCtas && (
+                        <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 mb-6 sm:mb-8 lg:mb-10">
+                            <Button variant="ghost" size="lg" className="text-foreground">
+                                Talk to sales
+                            </Button>
+                            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90" asChild>
+                                <Link href="/early-access">Get early access</Link>
+                            </Button>
+                        </div>
+                    )}
 
                     {/* Feature blurbs */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 pt-4 sm:pt-6 border-t border-border/60 mt-6 sm:mt-8 lg:mt-10 xl:mt-auto">
@@ -61,13 +77,13 @@ export function SideBySideSection(props: SideBySideSectionProps) {
                             className="object-cover"
                             priority
                         />
-                        <div className="absolute inset-0 flex items-center justify-center p-3 sm:p-4 lg:p-6">
+                        <div className="absolute flex items-center justify-center p-3 sm:p-4 lg:p-6 -right-1/4 top-1/2 -translate-y-1/2 w-[120%]">
                             <Image
                                 src={overlayImageSrc}
                                 alt="section illustration"
                                 width={1200}
                                 height={800}
-                                className="w-full h-auto rounded-lg sm:rounded-xl shadow-2xl max-w-[92%]"
+                                className="h-auto rounded-lg sm:rounded-xl w-full"
                                 priority
                             />
                         </div>

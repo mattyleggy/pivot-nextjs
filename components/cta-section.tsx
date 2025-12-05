@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function CtaSection() {
     return (
-        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-white">
+        <section className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 mt-60 bg-white">
             <div className="max-w-4xl mx-auto text-center">
                 {/* Headline */}
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 sm:mb-6">
@@ -19,8 +20,8 @@ export function CtaSection() {
                     <Button variant="ghost" size="lg" className="text-foreground w-full sm:w-auto">
                         Talk to sales
                     </Button>
-                    <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 w-full sm:w-auto">
-                        Join waitlist
+                    <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 w-full sm:w-auto" asChild>
+                        <Link href="/early-access">Get Early Access</Link>
                     </Button>
                 </div>
             </div>

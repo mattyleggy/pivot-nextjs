@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "clear-cache": "powershell -Command \"Remove-Item -Path .next/cache/images -Recurse -Force -ErrorAction SilentlyContinue\""
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

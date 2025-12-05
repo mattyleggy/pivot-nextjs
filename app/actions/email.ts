@@ -93,14 +93,14 @@ function createWaitlistEmailTemplate(data: WaitlistEmailData) {
 </head>
 <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
   <div style="background-color: #ffffff; border-radius: 8px; padding: 40px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <h1 style="color: #111827; font-size: 28px; margin-bottom: 20px; font-family: serif;">Welcome to the Pivot waitlist!</h1>
+    <h1 style="color: #111827; font-size: 28px; margin-bottom: 20px; font-family: serif;">Welcome to Pivot Early Access!</h1>
     
     <p style="color: #4b5563; font-size: 16px; margin-bottom: 20px;">
       Hi ${data.name},
     </p>
     
     <p style="color: #4b5563; font-size: 16px; margin-bottom: 20px;">
-      Thank you for joining the Pivot waitlist! We're thrilled to have you on board as we prepare for launch.
+      Thank you for getting early access to Pivot! We're thrilled to have you on board as we prepare for launch.
     </p>
     
     <p style="color: #4b5563; font-size: 16px; margin-bottom: 20px;">
@@ -167,7 +167,7 @@ export async function sendWaitlistEmail(data: WaitlistEmailData) {
       from: "Jay C <jay@pivotapp.com.au>",
       to: data.email,
       bcc: ["matty.j.lord@gmail.com"],
-      subject: "Welcome to the Pivot waitlist!",
+      subject: "Welcome to Pivot Early Access!",
       html: createWaitlistEmailTemplate(data),
     });
 

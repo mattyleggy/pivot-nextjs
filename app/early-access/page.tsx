@@ -24,13 +24,13 @@ export default function WaitlistPage() {
             const result = await sendWaitlistEmail(formData);
 
             if (result.success) {
-                toast.success("Successfully joined the waitlist! Check your email for confirmation.");
+                toast.success("Successfully got early access! Check your email for confirmation.");
                 setFormData({
                     name: "",
                     email: "",
                 });
             } else {
-                toast.error(result.error || "Failed to join waitlist. Please try again.");
+                toast.error(result.error || "Failed to get early access. Please try again.");
             }
         } catch (error) {
             toast.error("An unexpected error occurred. Please try again.");
@@ -54,7 +54,7 @@ export default function WaitlistPage() {
                     {/* Form Content */}
                     <div className="flex-1 flex flex-col max-w-lg">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
-                            Join the waitlist
+                            Get Early Access
                         </h2>
                         <p className="text-base text-gray-600 mb-2">
                             Be among the first to experience Pivot when we launch.
@@ -99,7 +99,7 @@ export default function WaitlistPage() {
 
                             {/* Consent Text */}
                             <p className="text-sm text-gray-600 mt-2">
-                                By joining the waitlist, you agree to our{" "}
+                                By getting early access, you agree to our{" "}
                                 <Link href="/privacy" className="underline hover:text-gray-900">
                                     privacy policy
                                 </Link>{" "}
@@ -112,7 +112,7 @@ export default function WaitlistPage() {
                                 disabled={isSubmitting}
                                 className="w-full h-12 bg-gray-900 text-white hover:bg-gray-800 rounded-md text-base font-medium mt-auto disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                {isSubmitting ? "Joining..." : "Join Waitlist"}
+                                {isSubmitting ? "Getting Access..." : "Get Early Access"}
                             </Button>
                         </form>
 

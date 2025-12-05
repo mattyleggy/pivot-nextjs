@@ -31,9 +31,9 @@ export function PricingSection() {
             description: "per standard user*",
             tagline: "For developers and early exploration",
             features: [
-                "2 million page views",
+                "200k page views",
                 "Limited projects, tests, and goals",
-                "Unlimited team members",
+                "Single team member",
                 "No-code visual and code editor",
                 "A/B testing & Split URL testing",
                 "Pivot AI Helper",
@@ -44,16 +44,16 @@ export function PricingSection() {
             buttonText: "Build for free",
         },
         {
-            name: "Team",
+            name: "Startup",
             headerColor: "bg-pink-100",
-            price: "$20",
+            price: "$99",
             priceNote: "Billed Annually",
             savings: "20% SAVINGS",
             description: "per standard user*",
             tagline: "For growing, collaborative teams",
             features: [
                 "Everything in Free, plus...",
-                "5 million page views",
+                "1 million page views",
                 "Unlimited projects, tests, and goals",
                 "Sequential testing",
             ],
@@ -68,8 +68,9 @@ export function PricingSection() {
             description: "per standard user*",
             tagline: "For teams who need more control",
             features: [
-                "Everything in Team, plus...",
+                "Everything in Startup, plus...",
                 "5 million page views",
+                "Unlimited team members",
                 "Rich permission controls",
                 "Priority support",
                 "No-code deployment",
@@ -80,7 +81,7 @@ export function PricingSection() {
             buttonText: "Choose business",
         },
         {
-            name: "Enterprise",
+            name: "Enterprise / Agency",
             headerColor: "bg-purple-100",
             price: "Request a Quote →",
             description: "Flexible pricing that scales with your business",
@@ -206,16 +207,6 @@ export function PricingSection() {
                                     >
                                         {tier.buttonText}
                                     </Button>
-
-                                    {tier.name === "Enterprise" && (
-                                        <Button
-                                            variant="outline"
-                                            className="w-full mt-2"
-                                            size="sm"
-                                        >
-                                            VOLUME DISCOUNTS
-                                        </Button>
-                                    )}
                                 </div>
                             </div>
                         </div>

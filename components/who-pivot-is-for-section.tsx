@@ -35,7 +35,7 @@ export function WhoPivotIsForSection() {
                     {audiences.map((audience, index) => (
                         <div
                             key={index}
-                            className="bg-muted p-6 sm:p-8 rounded-lg"
+                            className="bg-[#F2F1ED] p-6 sm:p-8"
                         >
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3 sm:mb-4">
                                 {audience.title}

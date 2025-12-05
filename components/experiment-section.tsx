@@ -4,9 +4,9 @@ export function ExperimentSection() {
     return (
         <SideBySideSection
             eyebrow="Smarter testing starts here"
-            title="Experiementation"
+            title="Experimentation"
             description={
-                "Design, launch, and measure experiments across your website or product — without code or complexity. Pivot helps you test ideas faster, uncover what truly moves the needle, and scale winning variations automatically."
+                "Design, launch, and measure experiments across your website or product, without code or complexity. Pivot helps you test ideas faster, uncover what truly moves the needle, and scale winning variations automatically."
             }
             features={[
                 {
@@ -17,11 +17,12 @@ export function ExperimentSection() {
                 {
                     title: "Automate What Works",
                     description:
-                        "When a variant wins, Pivot can roll it out automatically — so your team focuses on strategy, not manual rollouts and reports.",
+                        "When a variant wins, Pivot can roll it out automatically — helping your team focus on strategy instead of manual rollouts and reports.",
                 },
             ]}
-            backgroundImageSrc="/images/usp-1.png"
-            overlayImageSrc="/images/pivot-browser-2.png"
+            backgroundImageSrc="/images/usp-1a.png"
+            overlayImageSrc="/images/usp-1a-img.png"
+            showCtas={true}
         />
     );
 }
